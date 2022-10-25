@@ -1,10 +1,9 @@
-n=int(input())
-x=[]
-for i in range(1,n):
- if n%i==0:
-    x.append(i)
-c=sum(x)
-if c>n:
-   print("True")
+num=int(input())
+sm=0
+for i in range(1,num):
+    if(num%i==0):
+        sm=sm+i
+if(sm>num):
+    print(True)
 else:
-  print("False")
+    print(False)
